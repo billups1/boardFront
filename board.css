@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+body {
+    margin: 0;
+}
+
+main {
+    width: 600px;
+    margin: auto
+}
+
+
+
+
+#mainContent {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* 게시판 */
+.title {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+#buttonContainer {
+    text-align: right;
+}
+
+#board {
+    width: 800px;
+    margin: auto;
+}
+
+#boardList > table {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#boardList thead {
+    background-color: #bfdbff;
+}
+
+#boardList > table > tbody > tr {
+    cursor: pointer;
+}
+
+#boardPagenation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0;
+}
+#boardPagenation > div {
+    font-size: large;
+    padding: 4px;
+}
+
+
+
+
+.hoverSpringGreen {
+    transition: 0.4s;
+}
+.hoverSpringGreen:hover {
+    background-color: rgb(224, 224, 224);  
+}
+
+
+
+#writeForm {
+    width: 100%;
+}
+
+#writeForm input, #writeForm textarea {
+    width: 100%;
+}
+
+#writeForm textarea {
+    height: 400px;
+    resize: none;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trable.com</title>
+    <link href="/board.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ed51887679.js" crossorigin="anonymous"></script>
+
+    <style>
+        @font-face {
+            font-family: 'KNUTRUTHTTF';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/KNUTRUTHTTF.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            font-family: 'KNUTRUTHTTF';
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+
+        <section id="mainContent">
+            <section id="writeForm">
+                <section id="boardTitle" class="title">
+                    글쓰기
+                </section>
+
+                <form action="/write" method="post">
+                    <div>
+                        <label>제목<input type="text"></label>
+                    </div>
+                    <div>
+                        <label>내용<textarea type="text"></textarea></label>
+                    </div>
+                    <div style="text-align: right;">
+                        <button>글쓰기</button>
+                        <button type="button" onclick="location.href='/board.html'">취소</button>
+                    </div>
+                </form>
+
+            </section>
+
+            <script src="/board.js"></script>
+
+    </main>
+</body>
+
+</html>
