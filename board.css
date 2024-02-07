@@ -73,10 +73,10 @@ main {
 
 
 
-.hoverSpringGreen {
+.hoverGray {
     transition: 0.4s;
 }
-.hoverSpringGreen:hover {
+.hoverGray:hover {
     background-color: rgb(224, 224, 224);  
 }
 
