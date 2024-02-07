@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>board</title>
+    <link href="/board.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ed51887679.js" crossorigin="anonymous"></script>
+
+    <style>
+        @font-face {
+            font-family: 'KNUTRUTHTTF';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/KNUTRUTHTTF.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            font-family: 'KNUTRUTHTTF';
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+
+        <section id="mainContent">
+            <section id="writeForm">
+                <section id="menuTitle" class="title">
+                    게시글보기
+                </section>
+
+                <div id="titleContainer">
+                    제목 : <span id="postTitle">제목입니다.</span>
+                </div>
+                <div id="contentContainer">
+                    내용
+                    <div id="postContent">
+                        게시글 내용입니다.<br>
+                        게시글 내용입니다.<br>
+                        게시글 내용입니다.<br>
+                        게시글 내용입니다.<br>
+                        게시글 내용입니다.<br>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <div style="text-align: right;">
+                    <button id="writeBtn">수정하기</button>
+                    <button id="cancelBtn" type="button" onclick="location.href='/board.html'">메인으로</button>
+                </div>
+
+            </section>
+
+            <div id="commentContainer">
+                <div>
+                    총 댓글 : <span id="commentCount">00</span>개
+                </div>
+
+                <div style="display: flex; height: 40px;">
+                    <div style="flex-basis: 90%;">
+                        <input type="text" style="height: 100%; width: 100%;">
+                    </div>
+                    <div style="flex-basis: 10%;">
+                        <button id="commentBtn" style="height: 100%; width: 100%;">댓글<br>달기</button>
+                    </div>
+                </div>
+
+                <div>
+                    <span id="writerName">홍길동</span> <span id="writeDate">2024-02-07 05:41</span><br>
+                    <span id="commentContent">감사합니다.</span><br>
+                    <button id="commentOfCommentBtn">댓글달기</button>
+                </div>
+                <div>
+                    <span id="writerName">관리자</span> <span id="writeDate">2024-02-07 06:41</span><br>
+                    <span id="commentContent">고맙습니다.</span><br>
+                    <button id="commentOfCommentBtn">댓글달기</button>
+                </div>
+                
+            </div>
+
+            <script src="/js/write.js"></script>
+
+    </main>
+</body>
+
+</html>

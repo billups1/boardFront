@@ -22,12 +22,6 @@ main {
 
 
 
-#mainContent {
-    display: flex;
-    flex-direction: row;
-}
-
-
 /* 게시판 */
 .title {
     text-align: center;
@@ -88,6 +82,7 @@ main {
 
 #writeForm input, #writeForm textarea {
     width: 100%;
+    padding: 5px;
 }
 
 #writeForm textarea {

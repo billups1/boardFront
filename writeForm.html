@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trable.com</title>
+    <title>board</title>
     <link href="/board.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ed51887679.js" crossorigin="anonymous"></script>
 
@@ -26,28 +26,33 @@
 <body>
     <main>
 
-        <section id="mainContent">
-            <section id="writeForm">
-                <section id="boardTitle" class="title">
-                    글쓰기
-                </section>
-
-                <form action="/write" method="post">
-                    <div>
-                        <label>제목<input type="text"></label>
-                    </div>
-                    <div>
-                        <label>내용<textarea type="text"></textarea></label>
-                    </div>
-                    <div style="text-align: right;">
-                        <button>글쓰기</button>
-                        <button type="button" onclick="location.href='/board.html'">취소</button>
-                    </div>
-                </form>
-
+        <section id="writeForm">
+            <section id="menuTitle" class="title">
+                글쓰기
             </section>
 
-            <script src="/board.js"></script>
+            <div>
+                <label>제목<input type="text" id="postTitle"></label>
+            </div>
+            <div>
+                <label>내용<textarea type="text" id="postContent"></textarea></label>
+            </div>
+            <div style="display: flex;">
+                <div style="flex-basis: 50%; padding: 10px;">
+                    <label>작성자 이름<input type="text" id="postTitle"></label>
+                </div>
+                <div style="flex-basis: 50%; padding: 10px;">
+                    <label>비밀번호(삭제시 필요)<input type="password" id="postTitle"></label>
+                </div>
+            </div>
+            <div style="text-align: right;">
+                <button id="writeBtn">글쓰기</button>
+                <button id="cancelBtn" type="button" onclick="location.href='/board.html'">취소</button>
+            </div>
+
+        </section>
+
+        <script src="/js/write.js"></script>
 
     </main>
 </body>
